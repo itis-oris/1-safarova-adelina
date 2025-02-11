@@ -1,0 +1,115 @@
+/* Контейнер формы */
+.edit-recipe-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-recipe-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4cae4c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 174, 76, 0.5);
+}
+
+/* Аватар */
+.avatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Категории (чекбоксы) */
+.form-group div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group div input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Кнопки */
+button.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn-primary {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+button.btn-primary:hover {
+    background-color: #4cae4c;
+}
+
+a.btn-secondary {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a.btn-secondary:hover {
+    background-color: #c9302c;
+}
+
+/* Рейтинг и дата */
+.form-group p {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 14px;
+
+}

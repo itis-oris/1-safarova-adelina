@@ -1,0 +1,67 @@
+/* Основной список рецептов */
+.recipe-list {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Гибкая сетка */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточка рецепта */
+.recipe-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-item a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-item img.recipe-cover {
+    max-width: 100%; /* Изображение полностью вмещается по ширине */
+    max-height: 200px; /* Ограничение по высоте */
+    object-fit: contain; /* Сохраняет пропорции, не обрезая изображение */
+    margin-bottom: 10px;
+
+}
+
+.recipe-item h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #4CAF50;
+}
+
+.recipe-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}

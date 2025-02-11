@@ -1,0 +1,103 @@
+/* Контейнер профиля */
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-container .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    margin-bottom: 10px;
+}
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn, .edit-btn, .delete-btn, .remove-btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.delete-btn{
+    background-color: #ef142f;
+
+}
+
+.btn:hover, .edit-btn:hover, .delete-btn:hover, .remove-btn:hover {
+    background-color: #357a38;
+}
+
+/* Блоки с рецептами */
+.user-recipes, .saved-recipes, .interaction-history {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-recipes ul, .saved-recipes ul, .interaction-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-recipes li, .saved-recipes li, .interaction-history li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.user-recipes li:last-child, .saved-recipes li:last-child, .interaction-history li:last-child {
+    border-bottom: none;
+}
+
+/* Избранные рецепты */
+.saved-recipes a.remove-btn {
+    color: #e53935;
+}
+
+.saved-recipes a.remove-btn:hover {
+    color: #a02725;
+}
+
+/* История взаимодействий */
+.interaction-history li a {
+    color: #333;
+    font-weight: bold;
+}
+
+.interaction-history li a:hover {
+    color: #4CAF50;
+}
+
+/* Сообщения об отсутствии данных */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+.user-preference-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+

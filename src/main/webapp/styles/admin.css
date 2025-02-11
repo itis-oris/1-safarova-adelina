@@ -1,0 +1,148 @@
+/* Основная структура страницы */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Блок категорий */
+.preferences-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preferences-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Список категорий */
+.preferences-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.preferences-container li:last-child {
+    border-bottom: none;
+}
+
+/* Кнопки категорий */
+.delete-category, .add-category {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-category:hover {
+    background-color: #d32f2f;
+}
+
+.add-category {
+    background-color: #4CAF50;
+}
+
+.add-category:hover {
+    background-color: #45a049;
+}
+
+/* Добавление категорий */
+.input-category {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Пользователи */
+.user-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Список пользователей */
+.recipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+/* Аватар */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Кнопки прав администратора */
+.grant-rights-btn, .revoke-rights-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.grant-rights-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.grant-rights-btn:hover {
+    background-color: #45a049;
+}
+
+.revoke-rights-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.revoke-rights-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Сообщения */
+.message {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.message.error {
+    background-color: #f44336;
+    color: white;
+}
+

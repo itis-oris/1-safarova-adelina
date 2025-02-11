@@ -1,0 +1,55 @@
+/* Стили формы поиска */
+.search-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-container input[type="text"],
+.search-container select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #357a38;
+}
+
+/* Основной список рецептов */
+.recipe-list {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Гибкая сетка */
+    gap: 20px;
+    justify-content: center;
+}
+
+
+

@@ -1,0 +1,183 @@
+.recipe-container {
+    /*display: flex;*/
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-container h1, .recipe-container h2, .recipe-container h3 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.recipe-details {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.recipe-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    padding: 15px; /* Отступы */
+    background: #f9f9f9; /* Светлый фон */
+    border-radius: 8px; /* Скруглённые углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.recipe-details li {
+    padding: 5px 0; /* Межстрочный отступ */
+    font-size: 16px; /* Размер шрифта */
+    border-bottom: 1px solid #ddd; /* Разделитель */
+}
+
+.recipe-details li:last-child {
+    border-bottom: none; /* Убираем разделитель у последнего элемента */
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actions form {
+    display: inline-block;
+}
+
+.actions button {
+    background-color: #4CAF50; /* Зелёный фон */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Скруглённые углы */
+    cursor: pointer;
+    font-size: 16px; /* Увеличенный шрифт */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.actions button:hover {
+    background-color: #357a38; /* Тёмно-зелёный */
+    transform: scale(1.05); /* Лёгкое увеличение */
+}
+.rating {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rating form {
+    display: inline-block;
+}
+
+.rating select {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rating button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating button:hover {
+    background-color: #1565C0;
+}
+
+/* Секция комментариев */
+.comments-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.comments-section h2, .comments-section h3 {
+    text-align: left;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+}
+
+.comments-section button {
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comments-section button:hover {
+    background-color: #D84315;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.comment p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.comment p strong {
+    color: #333;
+}
+
+.comment p em {
+    font-size: 12px;
+    color: #777;
+}
+.recipe-cover-image {
+    width: 100%; /* Занимает всю ширину блока */
+    height: auto;
+    object-fit: cover; /* Кадрирование изображения */
+    margin: 20px auto;
+    border-radius: 10px; /* Скруглённые углы */
+}
+
+
+.carousel-item img {
+    height: 500px; /* Задайте высоту по вашему желанию */
+    object-fit: cover; /* Обрезка для сохранения пропорций */
+    border-radius: 8px; /* Скруглённые углы */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачные стрелки */
+    border-radius: 50%;
+}
